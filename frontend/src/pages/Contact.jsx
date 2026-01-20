@@ -11,11 +11,9 @@ const App = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Front-end only logic: Show toast and reset form
     setShowToast(true);
     setFormData({ name: "", email: "", message: "" });
 
-    // Auto-hide toast after 3 seconds
     setTimeout(() => {
       setShowToast(false);
     }, 3000);
@@ -36,7 +34,7 @@ const App = () => {
               <p className="font-bold">Success!</p>
               <p className="text-sm opacity-90">Your message has been sent successfully.</p>
             </div>
-            <button 
+            <button
               onClick={() => setShowToast(false)}
               className="ml-4 hover:bg-green-700 p-1 rounded-full"
             >
@@ -46,7 +44,7 @@ const App = () => {
         </div>
       )}
 
-      {/* Optional Top Quote / Headline */}
+      {/* Top Quote */}
       <div className="bg-slate-800 text-white py-10 text-center px-4">
         <h1 className="text-3xl md:text-4xl font-bold tracking-tight">
           "We’re Here to Help – Get in Touch Today!"
@@ -113,13 +111,22 @@ const App = () => {
             <h2 className="text-2xl font-bold mb-4 text-gray-800">Our Contact Info</h2>
             <p className="text-gray-500 mb-6">Stop by our office or reach out via phone/email anytime.</p>
           </div>
-          
+
           <div className="space-y-4">
             <div className="flex items-start gap-4">
               <div className="bg-blue-50 p-3 rounded-lg text-blue-600 font-bold">📍</div>
               <div>
                 <p className="font-bold text-gray-800">Address</p>
-                <p className="text-gray-600 text-sm">123, Logistics Park, New Delhi - 110001</p>
+                <p className="text-gray-600 text-sm">
+                  <a
+                    href="https://www.google.com/maps/place/L-204,+2nd+Floor,+Street+No.7C,+Mahipalpur+Ext,+New+Delhi,+Delhi+110037,+India"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline text-blue-600"
+                  >
+                    L-204 2nd Floor, Street No.7C, Mahipalpur Ext. New Delhi (110037) - India
+                  </a>
+                </p>
               </div>
             </div>
 
@@ -127,7 +134,9 @@ const App = () => {
               <div className="bg-blue-50 p-3 rounded-lg text-blue-600 font-bold">✉️</div>
               <div>
                 <p className="font-bold text-gray-800">Email</p>
-                <a href="mailto:info@globalflow.in" className="text-blue-600 text-sm hover:underline">info@globalflow.in</a>
+                <a href="mailto:info@globalflow.in" className="text-blue-600 text-sm hover:underline">
+                  info@globalflow.in
+                </a>
               </div>
             </div>
 
@@ -135,24 +144,16 @@ const App = () => {
               <div className="bg-blue-50 p-3 rounded-lg text-blue-600 font-bold">📞</div>
               <div>
                 <p className="font-bold text-gray-800">Phone</p>
-                <a href="tel:+919910165600" className="text-blue-600 text-sm hover:underline">+91 9910165600</a>
+                <a href="tel:+919910165600" className="text-blue-600 text-sm hover:underline">
+                  +91 9910165600
+                </a>
               </div>
             </div>
           </div>
 
           <div className="pt-6 border-t border-gray-100">
             <p className="font-bold text-gray-800 mb-3">Follow Us</p>
-            <div className="flex gap-3">
-              {['Facebook', 'Twitter'].map((social) => (
-                <a 
-                  key={social}
-                  href="#" 
-                  className="px-4 py-2 bg-gray-100 rounded-full text-sm font-medium text-gray-700 hover:bg-blue-600 hover:text-white transition-colors"
-                >
-                  {social}
-                </a>
-              ))}
-            </div>
+          
           </div>
         </div>
       </div>
@@ -161,12 +162,13 @@ const App = () => {
       <div className="w-full h-80 px-4 md:px-20 pb-12">
         <div className="w-full h-full rounded-3xl overflow-hidden shadow-inner border border-gray-200">
           <iframe
-            className="w-full h-full"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.8392319277!2d77.06889754725782!3d28.527280343993736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b3476ffdf%3A0x4cfa38e0175b454f!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3490.123456789012!2d77.1356789!3d28.5678901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1234567890ab%3A0xc0ffee1234567890!2sL-204%2C+2nd+Floor%2C+Street+No.7C%2C+Mahipalpur+Ext%2C+New+Delhi%2C+Delhi+110037%2C+India!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Google Map"
           ></iframe>
         </div>
       </div>
