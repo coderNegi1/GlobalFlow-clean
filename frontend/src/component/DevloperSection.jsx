@@ -10,7 +10,7 @@ const devData = {
   linkedin: "https://www.linkedin.com/in/prashant-negi-a090ba275/",
   portfolio: "prashantnegi",
   bio: "Building easy-to-use and reliable websites that grow smoothly with your business.",
-  avatar: "/src/assets/prashant-negi.jpg"
+  avatar: "/assets/prashant-negi.jpg"
 };
 
 const DeveloperSection = () => {
