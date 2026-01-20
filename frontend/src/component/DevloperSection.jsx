@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Terminal, X, Mail, Phone, Github, Linkedin } from 'lucide-react';
+import prashantImg from "../assets/prashant-negi.jpg";
 
 const devData = {
   name: "PRASHANT NEGI",
@@ -10,7 +11,7 @@ const devData = {
   linkedin: "https://www.linkedin.com/in/prashant-negi-a090ba275/",
   portfolio: "prashantnegi",
   bio: "Building easy-to-use and reliable websites that grow smoothly with your business.",
-  avatar: "/assets/prashant-negi.jpg"
+  avatar: prashantImg
 };
 
 const DeveloperSection = () => {
