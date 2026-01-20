@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 const About = () => {
     return (
         <div className="font-sans bg-white">
-
             {/* Hero Section */}
             <section
                 className="relative bg-blue-600 text-white py-24 md:py-32 bg-cover bg-center"
@@ -21,7 +20,6 @@ const About = () => {
                     </p>
                 </div>
             </section>
-
             {/* Company Overview */}
             <section className="container mx-auto max-w-6xl px-4 py-16">
                 <div className="text-center mb-12">
