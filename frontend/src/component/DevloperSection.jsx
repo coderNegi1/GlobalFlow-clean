@@ -79,16 +79,10 @@ const DeveloperSection = () => {
         className="flex items-center gap-4 px-2 md:px-5 hover:border-blue-500 transition-all group md:border rounded-full border-gray-500 p-1 hover:scale-105 active:scale-95 duration-200"
       >
         {/* Avatar — always visible */}
-        <div className="w-8 h-8 rounded-full overflow-hidden border border-gray-200 group-hover:ring-2 ring-blue-500/20 transition-all">
-          <img
-            src={devData.avatar}
-            alt="developer"
-            className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all"
-          />
-        </div>
+       
 
         {/* Text — hidden on mobile, visible on md+ */}
-        <div className="hidden md:flex items-center gap-2.5">
+        <div className="flex items-center gap-2.5">
           <Terminal size={14} className="text-gray-200 animate-pulse" />
           <span className="text-[13px] font-medium text-gray-700 tracking-wide">
             {isOpen ? "./close-Dev" : "./Prashant-Negi"}
