@@ -23,14 +23,14 @@ const Navbar = () => {
           <div className="flex items-center space-x-6">
             <div className="flex items-center space-x-2">
               <Mail size={16} />
-              <span className="font-medium">info@globalflow.in</span>
+              <span className="font-medium">management@globalflow.in</span>
             </div>
             <div className="flex items-center space-x-2">
               <Phone size={16} />
               <span className="font-medium">+91 99118 56075</span>
               
                <Phone size={16} />
-              <span className="font-medium">+91 93112 22547</span>
+              <span className="font-medium">+91  99101 65600</span>
 
             </div>
           </div>

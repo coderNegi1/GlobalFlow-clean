@@ -14,7 +14,7 @@ const HeroSection = () => {
   const videoSource = "/video/Logistic.mp4";
 
   // Text strings to be displayed with animation
-  const headingText = "GLOBALFLOW";
+  const headingText = "GlobalFlow";
   const subHeadingText = "LOGISTICS";
   const taglineText = "Your Trusted Partner in Global Supply Chain Solutions";
 
@@ -55,7 +55,7 @@ const HeroSection = () => {
       {/* Animated Text Overlay */}
       <div className="relative z-20 flex flex-col items-center justify-center h-full px-4">
         {/* Main Heading */}
-        <h1 className="text-[#c6a95d] text-6xl md:text-8xl lg:text-[9rem] font-black tracking-tighter text-center leading-none">
+        <h1 className="text-[#c6a95d] text-5xl md:text-8xl lg:text-[9rem] font-black tracking-tighter text-center leading-none">
           {headingText.split('').map((char, index) => (
             <span
               key={index}
