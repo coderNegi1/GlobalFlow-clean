@@ -71,12 +71,13 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <div className="mt-8 py-4 text-center text-sm bg-gray-300 text-gray-800 ">
-          <p className="font-sans">   &copy; 2026 GlobalFlow. All Rights Reserved.</p>
-          <p className='pt-1 font-sans flex items-center justify-center gap-2'>
+        <div className="mt-8 py-4 md:flex text-center justify-evenly items-center text-sm bg-gray-300 text-gray-800 ">
+          <span className="font-sans">   &copy; 2026 GlobalFlow. All Rights Reserved.</span>
+          <br />
+          <span className='pt-1 font-sans  '>
             Designed by
             <DeveloperSection />
-          </p>
+          </span>
 
         </div>
 
